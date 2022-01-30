@@ -24,4 +24,5 @@
     <string name="b1">(</string>
     <string name="b2">)</string>
     <string name="calculator">Calculator</string>
+    <string name="calculator_app">Calculator App</string>
 </resources>

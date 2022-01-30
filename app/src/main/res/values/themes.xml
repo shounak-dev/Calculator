@@ -14,15 +14,4 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="splash_screen" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <item name="android:windowBackground">@drawable/splash_screen</item>
-    </style>
-
-    <style name="Calculator_theme.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-    </style>
-
-    <style name="Calculator_theme">no_action_bar</style>
-
 </resources>

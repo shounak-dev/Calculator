@@ -20,7 +20,6 @@ class MainActivity : AppCompatActivity() {
     @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setTheme(R.style.Calculator_theme)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
