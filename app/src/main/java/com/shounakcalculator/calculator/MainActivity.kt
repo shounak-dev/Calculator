@@ -79,6 +79,9 @@ class MainActivity : AppCompatActivity() {
         binding.buttondivision.setOnClickListener {
             binding.input.append(" / ")
         }
+        binding.buttonpercentage.setOnClickListener{
+            binding.input.append(" % ")
+        }
         binding.buttonbackspace.setOnClickListener {
             var backspace: String? = null
             if (binding.input.text.isNotEmpty()) {
@@ -113,6 +116,7 @@ class MainActivity : AppCompatActivity() {
     private fun getInputExpression(): String {
         var expression = input.text.replace(Regex("÷"), "/")
         expression = expression.replace(Regex("×"), "*")
+        expression = expression.replace(Regex("%"),"/100*")
         return expression
     }
 }
