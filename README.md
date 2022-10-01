@@ -10,6 +10,19 @@ A Simple Calculator Application Using Kotlin Language
 [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/) 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) 
 ![contributions welcome](https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=0059b3&style=flat-square) 
+![Maintenance](https://img.shields.io/maintenance/yes/2022)
+
+Some features that are included in the app are:
+<ul>
+  <li>Back Space</li>
+  <li>% Feature</li>
+  <li>History</li>
+</ul>
+
+## Functionality & Concepts used 👨‍💻 :
+
+- [Kotlin](https://kotlinlang.org/) - First class and official programming language for Android development. Our app is totally written in kotlin.
+- [Different Layouts](https://developer.android.com/guide/topics/ui/declaring-layout) -  In this app we have used difrenet layouts to make the app UI responsive. The used layouts are LinearLayout, RelativeLayout, ConstraintLayout and FrameLayout.
 
 ## Requirements 🎯 
 - Android 6.0 and Above
@@ -26,3 +39,8 @@ A Simple Calculator Application Using Kotlin Language
 ![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)
 ![ForTheBadge ANDROID](https://forthebadge.com/images/badges/built-for-android.svg)
 ![ForTheBadge GIT](https://forthebadge.com/images/badges/uses-git.svg)
+
+<br>
+<br>
+<h2 align="center">❤ Thank You Everyone ❤</h2>
+<br>
