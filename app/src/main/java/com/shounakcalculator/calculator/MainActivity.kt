@@ -74,10 +74,10 @@ class MainActivity : AppCompatActivity() {
             binding.input.append(" - ")
         }
         binding.buttonmultiply.setOnClickListener {
-            binding.input.append(" * ")
+            binding.input.append(" x ")
         }
         binding.buttondivision.setOnClickListener {
-            binding.input.append(" / ")
+            binding.input.append(" ÷ ")
         }
         binding.buttonbackspace.setOnClickListener {
             var backspace: String? = null
