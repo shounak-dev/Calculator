@@ -43,7 +43,7 @@
                 android:id="@+id/output"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                tools:text="abc"
+                tools:text=""
                 android:textColor="@color/green"
                 android:ellipsize="end"
                 android:clickable="false"
