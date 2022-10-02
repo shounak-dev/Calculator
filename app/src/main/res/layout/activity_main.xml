@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_above="@+id/buttonlayout"
-            android:layout_marginBottom="70dp">
+            android:layout_marginBottom="30dp">
 
             <TextView
                 android:id="@+id/input"
@@ -44,15 +44,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 tools:text=""
+                android:textColor="@color/green"
                 android:ellipsize="end"
                 android:clickable="false"
                 android:text="@{viewModel.outputDisplayText}"
                 android:focusable="false"
                 android:background="@android:color/transparent"
-                android:textSize="75sp"
+                android:textSize="70sp"
                 android:textAlignment="viewEnd"
-                android:padding="10dp"
-                android:textColor="@color/green" />
+                android:padding="15dp"
+                />
 
         </LinearLayout>
 
