@@ -1,16 +1,17 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-kapt'
     id 'kotlin-android-extensions'
 }
 
 android {
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.shounakcalculator.calculator"
         minSdk 21
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -19,6 +20,7 @@ android {
 
     buildFeatures{
         viewBinding true
+        dataBinding true
     }
 
     buildTypes {
@@ -37,7 +39,7 @@ android {
 }
 
 dependencies {
-
+    implementation 'androidx.activity:activity-ktx:1.6.0'
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.4.1'
     implementation 'com.google.android.material:material:1.5.0'
