@@ -5,6 +5,7 @@ import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.shounakcalculator.calculator.databinding.ActivityMainBinding
+import com.shounakcalculator.calculator.history.HistoryDialogFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -21,7 +22,21 @@ class MainActivity : AppCompatActivity() {
         }
 
         calculatorViewModel.error.observe(this) {
-            if(it != null) Toast.makeText(this, it, Toast.LENGTH_SHORT).show()
+            if (it != null) Toast.makeText(this, it, Toast.LENGTH_SHORT).show()
         }
-      }
+        setupObservers()
+    }
+
+    private fun setupObservers() {
+        calculatorViewModel.showHistory.observe(this) {
+            if (it.getContentIfNotHandled() != null) {
+                HistoryDialogFragment().show(supportFragmentManager, "history-fragment")
+            }
+        }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        binding.viewModel?.getLastCalculations(this)
+    }
 }
