@@ -61,8 +61,9 @@
             android:id="@+id/buttonlayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:orientation="horizontal">
+            android:layout_above="@+id/belowLayout"
+            android:orientation="horizontal"
+            tools:ignore="DisableBaselineAlignment">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -129,21 +130,6 @@
                     android:textColor="@color/white"
                     android:textSize="30sp"
                     android:textStyle="bold" />
-
-                <android.widget.ImageButton
-                    android:id="@+id/buttonhistory"
-                    android:layout_width="match_parent"
-                    android:layout_height="80dp"
-                    android:background="@drawable/ripple"
-                    android:backgroundTint="@color/blue"
-                    android:gravity="center"
-                    android:onClick="@{() -> viewModel.showHistory()}"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/ic_time"
-                    android:textColor="@color/white"
-                    android:textStyle="bold"
-                    android:tint="@color/white" />
-
 
             </LinearLayout>
 
@@ -352,25 +338,50 @@
                     android:textSize="40sp"
                     android:textStyle="bold" />
 
-                <android.widget.Button
-                    android:id="@+id/buttonequal"
-                    android:layout_width="match_parent"
-                    android:layout_height="80dp"
-                    android:background="@drawable/ripple"
-                    android:backgroundTint="@color/green"
-                    android:gravity="center"
-                    android:onClick="@{() -> viewModel.result(context)}"
-                    android:text="@string/Equal_To"
-                    android:textColor="@color/white"
-                    android:textSize="30sp"
-                    android:textStyle="bold" />
-
 
             </LinearLayout>
 
-
         </LinearLayout>
 
+        <LinearLayout
+            android:id="@+id/belowLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <android.widget.ImageButton
+                android:id="@+id/buttonhistory"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/ripple"
+                android:backgroundTint="@color/blue"
+                android:gravity="center"
+                android:onClick="@{() -> viewModel.showHistory()}"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_time"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:padding="12dp"
+                android:tint="@color/white" />
+
+
+            <android.widget.Button
+                android:id="@+id/buttonequal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/ripple"
+                android:backgroundTint="@color/green"
+                android:gravity="center"
+                android:onClick="@{() -> viewModel.result(context)}"
+                android:text="@string/Equal_To"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
 
     </RelativeLayout>
 </layout>
